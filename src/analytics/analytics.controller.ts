@@ -16,7 +16,8 @@ export class AnalyticsController {
     return this.analyticsService.getAnalytics();
   }
 
-  @ApiOperation({ summary: 'Get combined analytics data for dashboard' })
+  // @ApiOperation({ summary: 'Get combined analytics data for dashboard' })
+  @ApiOperation({ summary: 'Two set of Analytics data 1)Fetch Tasks for Deadline Health 2)Fetch Performance & Estimation Stats' })
   @ApiResponse({ status: HttpStatus.OK, description: 'Successfully retrieved combined analytics data for dashboard' })
   @Get('dashboard')
   async getDashboardAnalytics() {
