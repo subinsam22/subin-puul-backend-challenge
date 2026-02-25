@@ -26,13 +26,7 @@ export class UsersController {
   }
 
   
-  @ApiOperation({ summary: 'Get  specific user' })
-  @ApiResponse({ status: HttpStatus.OK, description: 'Successfully retrieved specific user.' })
-  @Get('user/:userId')
-  async getTasksByUserId(@Param('userId') userId: string): Promise<User> {
-    return this.usersService.findUserById(userId);
-  }
-  }
+}
 
   
 

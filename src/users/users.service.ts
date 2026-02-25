@@ -44,16 +44,7 @@ export class UsersService {
   //   return query.getRawMany();
   // }
 
-  async findUserById(userId: string): Promise<User> {
-      const user = await this.userRepository.findOne({
-        where: { id: userId },
-        relations: ['tasks'],
-      });
-      if (!user) {
-        throw new NotFoundException(`User with ID "${userId}" not found`);
-      }
-      return user;
-    }
+ 
 
   async findAll(query:FilterQueryDto) :Promise<PaginatedResponse<User>>{
     const {page = 1,limit=10,name, email, role} = query
