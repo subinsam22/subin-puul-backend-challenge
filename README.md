@@ -13,6 +13,12 @@ This is a RESTful API built with **NestJS**, **TypeORM**, and **PostgreSQL**. It
 
 
 ---
+## Tech Stack
+- **Framework:** NestJS (NodeJS)
+- **Language:** TypeScript
+- **Database:** PostgreSQL
+- **Documentation:** Swagger (OpenAPI)
+
 ##  Quick Start
 
 ### 1. Clone the Repository
