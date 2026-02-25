@@ -5,7 +5,7 @@ This is a RESTful API built with **NestJS**, **TypeORM**, and **PostgreSQL**. It
 
 ---
 
-## 🚀 Features
+##  Features
 
 - **Simulation-Based Auth:** Role-based access control using custom headers (Admin vs. Member).
 - **Task Management:** Create, update, and filter tasks by date, user, and name.
@@ -13,6 +13,14 @@ This is a RESTful API built with **NestJS**, **TypeORM**, and **PostgreSQL**. It
 
 
 ---
+##  Quick Start
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/puul-backend-challenge.git
+cd puul-backend-challenge
+```
+
 
 ## 🛠 Option 1: Running with Docker (Recommended)
 
