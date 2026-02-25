@@ -7,7 +7,7 @@ This is a RESTful API built with **NestJS**, **TypeORM**, and **PostgreSQL**. It
 
 ##  Features
 
-- **Simulation-Based Auth:** Role-based access control using custom headers (Admin vs. Member).
+
 - **Task Management:** Create, update, and filter tasks by date, user, and name.
 - **Analytics:** Admin-only dashboard for cost tracking and task completion rates.
 

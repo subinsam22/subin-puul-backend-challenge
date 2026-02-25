@@ -12,6 +12,7 @@ import { ThrottlerModule } from '@nestjs/throttler/dist/throttler.module';
 import { APP_GUARD } from '@nestjs/core';
 import { ThrottlerGuard } from '@nestjs/throttler';
 import { AnalyticsModule } from './analytics/analytics.module';
+import { CacheModule } from '@nestjs/cache-manager';
 
 
 @Module({
@@ -29,13 +30,19 @@ import { AnalyticsModule } from './analytics/analytics.module';
       password:process.env.DATABASE_PASSWORD,
       database:process.env.DATABASE_NAME,
       entities:[User,Tasks],
-      synchronize:true ,
+      synchronize:false ,
       // logging: true,
     }),
     ThrottlerModule.forRoot([{
       ttl: 60000, // 1 minute (in milliseconds)
-      limit: 5,  // Max 10 requests per minute per IP
+      limit: 100,  // Max 10 requests per minute per IP
     }]),
+    CacheModule.register({
+      ttl: 30000, // Cache duration in seconds
+      max: 100, // Maximum number of items in cache
+      isGlobal: true,
+    }),
+    
     UsersModule,
     TasksModule,
     AnalyticsModule
