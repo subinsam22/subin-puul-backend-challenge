@@ -1,0 +1,27 @@
+# Dependency directories
+node_modules
+npm-debug.log
+
+# Build outputs
+dist
+build
+.next
+out
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Environment files (Security risk!)
+.env
+.env.local
+.env.*.local
+
+# Git
+.git
+.gitignore
+
+# OS files
+.DS_Store
+Thumbs.db
