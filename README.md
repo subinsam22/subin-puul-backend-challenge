@@ -102,6 +102,8 @@ Once the app is running, access the Swagger UI for interactive testing and endpo
 
 🔗 **http://localhost:3000/api**
 
+For details info open api-documentation.md in root folder
+
 ---
 
 ## 💡 Configuration Tips
