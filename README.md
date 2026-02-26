@@ -52,10 +52,12 @@ DATABASE_NAME=puul_db
 
 ### 3. Launch
 # Install dependencies
-npm install node typeorm pg cache-manager throttler-storage
+```
+npm install node typeorm pg cache-manager
 
 
 npm install @nestjs/typeorm @nestjs/config @nestjs/throttler @nestjs/cache-manager
+```
 ```bash
 docker-compose up --build
 ```
