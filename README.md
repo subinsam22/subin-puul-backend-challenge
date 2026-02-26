@@ -44,7 +44,7 @@ Create a `.env` file in the root directory:
 ```env
 DATABASE_HOST=db
 DATABASE_PORT=5432
-DATABASE_USERNAME=postgres
+DATABASE_USER=postgres
 DATABASE_PASSWORD=password123
 DATABASE_NAME=puul_db
 ```
