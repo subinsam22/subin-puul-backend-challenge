@@ -24,7 +24,7 @@ This is a RESTful API built with **NestJS**, **TypeORM**, and **PostgreSQL**. It
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/yourusername/puul-backend-challenge.git
-cd puul-backend-challenge
+
 ```
 
 
