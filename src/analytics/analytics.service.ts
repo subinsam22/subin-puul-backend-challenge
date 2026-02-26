@@ -62,13 +62,13 @@ export class AnalyticsService {
 tasks.forEach(task => {
   const dDate = new Date(task.dueDate);
   
-  // 2. Map the Task entity to the TaskDeadlineDetailDto structure
+  
   const taskDetail: TaskDeadlineDetailDto = {
     id: task.id,
     title: task.title,
     dueDate: task.dueDate,
     status: task.status,
-    // Safely map users, providing an empty array if undefined
+    
     assignedUsers: (task.assignedUsers || []).map(user => ({
       name: user.name,
       email: user.email

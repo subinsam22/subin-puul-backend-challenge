@@ -30,7 +30,7 @@ import { CacheModule } from '@nestjs/cache-manager';
       password:process.env.DATABASE_PASSWORD,
       database:process.env.DATABASE_NAME,
       entities:[User,Tasks],
-      synchronize:false ,
+      synchronize:true ,
       // logging: true,
     }),
     ThrottlerModule.forRoot([{
