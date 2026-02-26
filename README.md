@@ -42,11 +42,11 @@ This is the fastest way to get the environment running with a containerized data
 Create a `.env` file in the root directory:
 
 ```env
-DB_HOST=db
-DB_PORT=5432
-DB_USERNAME=postgres
-DB_PASSWORD=password123
-DB_NAME=puul_db
+DATABASE_HOST=db
+DATABASE_PORT=5432
+DATABASE_USERNAME=postgres
+DATABASE_PASSWORD=password123
+DATABASE_NAME=puul_db
 ```
 
 
